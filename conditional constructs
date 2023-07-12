@@ -1,0 +1,48 @@
+# Задача №1. Ипотечный калькулятор
+region = input('Вы проживаете в Дальневосточном ФО? ')
+if region == 'да':
+  print('Ваша ставка - 2%')
+else:
+  base = 10
+  child = input('У вас больше 3 детей? ')
+  payroll = input('У вас зарплата поступает на наш банк? ')
+  insurance = input('Вы оформили страхование в нашем банке? ')
+  if child == 'да':
+    base -= 1
+  if payroll == 'да':
+    base -= 0.5
+  if insurance == 'да':
+    base -= 1.5
+    print('Ваша ставка: ', base)
+  else:
+    print('Ваша ставка: ', base)
+
+
+
+#Задача №2. Знаки зодиака
+date = int(input('Укажите день рождения: '))
+month = str(input('Укажите месяц рождения: '))
+if (month == 'март' and date >= 21) or (month == 'апрель' and date <= 19):
+  print('Овен')
+if (month == 'апрель' and date >= 20) or (month == 'май' and date <= 20):
+  print('Телец')
+if (month == 'май' and date >= 21) or (month == 'июнь' and date <= 20):
+  print('Близнецы')
+if (month == 'июнь' and date >= 21) or (month == 'июль' and date <= 22):
+  print('Рак')
+if (month == 'июль' and date >= 23) or (month == 'август' and date <= 22):
+  print('Лев')
+if (month == 'август' and date >= 23) or (month == 'сентябрь' and date <= 22):
+  print('Дева')
+if (month == 'сентябрь' and date >= 23) or (month == 'октябрь' and date <= 22):
+  print('Весы')
+if (month == 'октябрь' and date >= 23) or (month == 'ноябрь' and date <= 21):
+  print('Скорпион')
+if (month == 'ноябрь' and date >= 22) or (month == 'декабрь' and date <= 21):
+  print('Стрелец')
+if (month == 'декабрь' and date >= 22) or (month == 'январь' and date <= 19):
+  print('Козерог')
+if (month == 'январь' and date >= 20) or (month == 'февраль' and date <= 18):
+  print('Водолей')
+if (month == 'февраль' and date >= 19) or (month == 'март' and date <= 20):
+  print('Рыбы')
